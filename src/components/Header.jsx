@@ -3,16 +3,13 @@
  * @license Apache-2.0
  */
 
-/**
- * Imports
- */
+/***********
+ * IMPORTS *
+ ***********/
 
 import logo from "../images/logo.svg"
 import Navbar from "./Navbar"
 import { useState } from "react"
-
-
-
 
 const Header = () => {
 

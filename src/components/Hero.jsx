@@ -12,12 +12,13 @@ import bannerImg from "../images/hero-banner.png"
 const Hero = () => {
     return (
         <section
-            id=""
-            className="pt-28 lg:pt-36">
-            <div className="contain">
+            id="home"
+            className="pt-28 lg:pt-36"
+        >
+            <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
                 <div>
-                    <div className="">
-                        <figure className="">
+                    <div className="flex items-center gap-3">
+                        <figure className="img-box w-9 h-9 rounded-lg">
                             {/************************
                              * TODO-TROCAR AVATAR *
                              ************************/}
@@ -29,15 +30,15 @@ const Hero = () => {
                                 className="img-cover"
                             />
                         </figure>
-                        <div className="">
-                            <span className="">
-                                <span className=""></span>
+                        <div className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide">
+                            <span className="relative w-2 h-2 rounded-full bg-emerald-400 ">
+                                <span className="absolute inset-0 animate-ping w-2 h-2 rounded-full bg-emerald-400"></span>
                             </span>
                             Available for work
                         </div>
                     </div>
 
-                    <h2 className="">
+                    <h2 className="headline-1   ">
                         Desenvolvendo APIs e projetos full-stack
                     </h2>
 
@@ -49,12 +50,12 @@ const Hero = () => {
                 </div>
                 <div className="">
                     <figure className="">
-                        <img 
-                        src={bannerImg}
-                        width={656}
-                        height={800} 
-                        alt="Banner img"
-                        className="w-full" 
+                        <img
+                            src={bannerImg}
+                            width={656}
+                            height={800}
+                            alt="Banner img"
+                            className="w-full"
                         />
                     </figure>
                 </div>

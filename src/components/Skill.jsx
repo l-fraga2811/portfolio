@@ -6,6 +6,7 @@
 /***********
  * IMPORTS *
  ***********/
+import Skillcard from "./Skillcard";
 
 
 const skillItem = [
@@ -61,6 +62,19 @@ const Skill = () => {
             <p className="">
             Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
             </p>
+
+            <div className="grid gap-3 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
+                {
+                    skillItem.map(({imgSrc, label, desc}, key) => (
+                      <Skillcard
+                        imgSrc={imgSrc}
+                        label={label}
+                        desc={desc}
+                        key={key}
+                      />
+                    ))
+                }
+            </div>
         </div>
     </section>
   )

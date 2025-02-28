@@ -6,8 +6,8 @@
 /***********
  * IMPORTS *
  ***********/
-import perfImg from "../images/avatar-1.jpg"
-import bannerImg from "../images/hero-banner.png"
+import perfImg from "/images/avatar-1.jpg"
+import bannerImg from "/images/hero-banner.png"
 import { ButtonOutline, PrimaryButton } from "./Button"
 
 const Hero = () => {

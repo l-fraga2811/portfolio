@@ -7,7 +7,7 @@
  * IMPORTS *
  ***********/
 
-import logo from "../images/logo.svg"
+import logo from "/images/logo.svg"
 import Navbar from "./Navbar"
 import { useState } from "react"
 

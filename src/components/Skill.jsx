@@ -54,12 +54,13 @@ const skillItem = [
 
 const Skill = () => {
   return (
-    <section className="">
+    <section className="section">
         <div className="container">
-            <h2 className="headline-1">
+            <h2 className="headline-2">
                 Essentials Tools I Use
             </h2>
-            <p className="">
+
+            <p className="text-zinc-400 mt-3 max-w-[50ch] mb-8">
             Discover the powerful tools and technologies I use to create exceptional, high-performing websites & applications.
             </p>
 

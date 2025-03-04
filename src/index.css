@@ -107,6 +107,9 @@ body {
 .section{
     @apply pt-20 lg:pt-32 
 }
+.reveal-up{
+    @apply opacity-0 translate-y-20;
+}
 
 /**************
  * TIPOGRAFIA *

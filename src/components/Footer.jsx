@@ -65,7 +65,7 @@ const Footer = () => {
 
           <div className="mb-10">
 
-            <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
+            <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
               Let&apos;s work together!
             </h2>
 
@@ -73,6 +73,7 @@ const Footer = () => {
               label="Let's work together"
               href="mailto:lucasbelter2805@gmail.com"
               icon="chevron_right"
+              classes="reveal-up"
             />
 
           </div>
@@ -81,7 +82,7 @@ const Footer = () => {
 
             <div>
 
-              <p className="">sitemap</p>
+              <p className="mb-2">sitemap</p>
 
               <ul>
 
@@ -89,7 +90,7 @@ const Footer = () => {
                   <li key={key}>
                     <a
                       href={href}
-                      className=""
+                      className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up "
                     >
                       {label}
                     </a>
@@ -101,7 +102,7 @@ const Footer = () => {
 
             <div>
 
-              <p className="">Socials</p>
+              <p className="reveal-up">Socials</p>
 
               <ul>
 
@@ -110,10 +111,11 @@ const Footer = () => {
                     <a
                       href={href}
                       target="_blank"
-                      className=""
+                      className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up "
                     >
                       {label}
                     </a>
+
                   </li>
                 ))}
 
@@ -124,10 +126,10 @@ const Footer = () => {
 
         </div>
 
-        <div className="">
+        <div className="flex items-center justify-between pt-10 mb-8 reveal-up">
           <a
             href=""
-            className="">
+            className="reveal-up">
             <img
               src="/images/logo.svg"
               width={40}
@@ -135,8 +137,13 @@ const Footer = () => {
               alt="logo"
             />
           </a>
-          <p className="">
-            &copy; {new Date().getFullYear()} <span>DevFraga. All rights reserved.</span>
+          <p className="text-sm text-zinc-500 reveal-up">
+            &copy; {new Date().getFullYear() + " "}
+            <span 
+            className="text-zinc-200"
+            >
+              DevFraga. All rights reserved.
+            </span>
           </p>
         </div>
       </div>

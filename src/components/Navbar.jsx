@@ -3,10 +3,9 @@
  * @license Apache-2.0
  */
 
-/**
- * Imports
- */
-
+/***********
+ * IMPORTS *
+ ***********/
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
@@ -51,11 +50,6 @@ const Navbar = ({ navOpen }) => {
         {
             label: 'Work',
             link: '#work',
-            className: 'nav-link'
-        },
-        {
-            label: 'Reviews',
-            link: '#reviews',
             className: 'nav-link'
         },
         {

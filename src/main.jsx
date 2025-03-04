@@ -3,22 +3,22 @@
  * @license Apache-2.0
  */
 
-/**
- * Node modules
- */
+/****************
+ * NODE MODULES *
+ ****************/
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-/**
- * Components
- */
+/**************
+ * COMPONENTS *
+ **************/
 import App from './App.jsx'
 
-
-/**
- * Styles
- */
+/**********
+ * STYLES *
+ **********/
 import './index.css'
+import 'lenis/dist/lenis.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

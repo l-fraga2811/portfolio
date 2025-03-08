@@ -52,7 +52,7 @@ const Skill = () => {
     <section className="section">
       <div className="container">
         <h2 className="headline-2 reveal-up">
-          Ferramentas que utilizo
+          Ferramentas que utilizo (Ainda não está com todas as ferramentas que utilizo, estou trabalhando no portfolio)
         </h2>
 
         <p className="text-zinc-400 mt-3 max-w-[50ch] mb-8 reveal-up">

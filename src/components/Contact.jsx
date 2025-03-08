@@ -3,12 +3,6 @@
  * @license Apache-2.0
  */
 
-/***********
- * IMPORTS *
- ***********/
-
-
-
 const socialLinks = [
     {
         href: 'https://www.github.com/codewithsadee-org',
@@ -53,11 +47,11 @@ const Contact = () => {
                 <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
 
                     <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
-                        Contact Me
+                        Entre em Contato
                     </h2>
 
                     <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
-                        I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to answer your message!
+                        Estou à procura de novas oportunidades. Se você tem uma pergunta ou apenas quer me dizer oi, eu farei o possível para responder sua mensagem!
                     </p>
 
                     <div className="flex items-center gap-2 mt-auto">
@@ -85,7 +79,7 @@ const Contact = () => {
                                     htmlFor="name"
                                     className="label reveal-up"
                                 >
-                                    Name
+                                    Nome
                                 </label>
 
                                 <input
@@ -94,7 +88,7 @@ const Contact = () => {
                                     id="name"
                                     autoComplete="name"
                                     required
-                                    placeholder="Enter your name"
+                                    placeholder="Seu nome"
                                     className="text-field reveal-up"
                                 />
                             </div>
@@ -124,13 +118,13 @@ const Contact = () => {
                                 htmlFor="message"
                                 className="label reveal-up "
                             >
-                                Message
+                                Mensagem
                             </label>
 
                             <textarea
                                 name="message"
                                 id="message"
-                                placeholder="Hi!"
+                                placeholder="Olá!"
                                 required
                                 className="text-field resize-y min-h-32 max-h-80 reveal-up "
                             ></textarea>
@@ -140,7 +134,7 @@ const Contact = () => {
                             type="submit"
                             className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up "
                         >
-                            Submit
+                            Enviar
                         </button>
 
                     </form>

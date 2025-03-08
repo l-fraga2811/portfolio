@@ -14,19 +14,15 @@ const sitemap = [
     href: '#home'
   },
   {
-    label: 'About',
+    label: 'Sobre',
     href: '#about'
   },
   {
-    label: 'Work',
+    label: 'Projetos',
     href: '#work'
   },
   {
-    label: 'Reviews',
-    href: '#reviews'
-  },
-  {
-    label: 'Contact me',
+    label: 'Entre em Contato',
     href: '#contact'
   }
 ];
@@ -34,23 +30,19 @@ const sitemap = [
 const socials = [
   {
     label: 'GitHub',
-    href: 'https://www.github.com/codewithsadee-org'
+    href: 'https://www.github.com/l-fraga2811'
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/codewithsadee'
+    href: 'https://www.linkedin.com/in/devfraga'
   },
   {
     label: 'Twitter X',
-    href: 'https://x.com/codewithsadee_'
+    href: 'https://x.com/lcf_cs'
   },
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/codewithsadee'
-  },
-  {
-    label: 'CodePen',
-    href: 'https://codepen.io/codewithsadee'
+    href: 'https://www.instagram.com/_lfraga/'
   }
 ];
 
@@ -66,11 +58,11 @@ const Footer = () => {
           <div className="mb-10">
 
             <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-              Let&apos;s work together!
+              Vamos trabalhar!
             </h2>
 
             <PrimaryButton
-              label="Let's work together"
+              label="Envie-me um e-mail"
               href="mailto:lucasbelter2805@gmail.com"
               icon="chevron_right"
               classes="reveal-up"
@@ -82,7 +74,7 @@ const Footer = () => {
 
             <div>
 
-              <p className="mb-2">sitemap</p>
+              <p className="mb-2 reveal-up">Sitemap</p>
 
               <ul>
 
@@ -102,7 +94,7 @@ const Footer = () => {
 
             <div>
 
-              <p className="reveal-up">Socials</p>
+              <p className="reveal-up">Redes Sociais</p>
 
               <ul>
 

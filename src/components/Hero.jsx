@@ -6,75 +6,70 @@
 /***********
  * IMPORTS *
  ***********/
-import { ButtonOutline, PrimaryButton } from "./Button"
+
+//TODO: mudar essa imagem feia do krl e colocar as tecnologias que eu mais uso
+import { ButtonOutline, PrimaryButton } from "./Button";
 
 const Hero = () => {
-    return (
-        <section
-            id="home"
-            className="pt-[100px] lg:pt-[120px]">
+  return (
+    <section id="home" className="pt-[100px] lg:pt-[120px] min-h-[100vh]">
+      <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
+        <div>
+          <div className="flex items-center gap-3">
+            <figure className="img-box w-9 h-9 rounded-lg">
+              <img
+                src="/images/avatar-1.png"
+                width={40}
+                height={40}
+                alt="Perf img"
+                className="img-cover"
+              />
+            </figure>
+            <div className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide">
+              <span className="relative w-2 h-2 rounded-full bg-emerald-400 ">
+                <span className="absolute inset-0 animate-ping w-2 h-2 rounded-full bg-emerald-400"></span>
+              </span>
+              Disponível
+            </div>
+          </div>
 
-            <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
-                <div>
-                    <div className="flex items-center gap-3">
+          <h2 className="headline-1 max-w-[15xh] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
+            Desenvolvedor Fullstack
+          </h2>
 
-                        <figure className="img-box w-9 h-9 rounded-lg">
-                        
-                            <img
-                                src="/images/avatar-1.png"
-                                width={40}
-                                height={40}
-                                alt="Perf img"
-                                className="img-cover"
-                            />
-                        </figure>
-                        <div className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide">
+          <div className="flex items-center gap-3">
+            <PrimaryButton
+              label={"Baixar CV"}
+              icon={"download"}
+              href={"/assets/CV.pdf"}
+            />
 
-                            <span className="relative w-2 h-2 rounded-full bg-emerald-400 ">
-
-                                <span className="absolute inset-0 animate-ping w-2 h-2 rounded-full bg-emerald-400"></span>
-                            </span>
-                            Disponível
-                        </div>
-                    </div>
-
-                    <h2 className="headline-1 max-w-[15xh] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
-                        Desenvolvedor Backend & Fullstack
-                    </h2>
-
-                    <div className="flex items-center gap-3">
-                        <PrimaryButton
-                            label={"Baixar CV"}
-                            icon={"download"}
-                            href={"/assets/CV.pdf"}
-                        />
-
-                        <ButtonOutline
-                            label={"Rolar para baixo"}
-                            href={"#about"}
-                            icon={"arrow_downward"}
-                        />
-                    </div>
-                </div>
-                <div className="hidden lg:block">
-
-                    <figure className="w-full max-w-[480px] 
+            <ButtonOutline
+              label={"Rolar para baixo"}
+              href={"#about"}
+              icon={"arrow_downward"}
+            />
+          </div>
+        </div>
+        <div className="hidden lg:block">
+          <figure
+            className="w-full max-w-[480px] 
                     ml-auto bg-gradient-to-t 
                     from-sky-400/40 
-                    to-65% rounded-[60px] overflow-hidden">
+                    to-65% rounded-[60px] overflow-hidden"
+          >
+            <img
+              src="/images/hero-banner.png"
+              width={656}
+              height={800}
+              alt="Banner img"
+              className="w-full"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-                        <img
-                            src="/images/hero-banner.png"
-                            width={656}
-                            height={800}
-                            alt="Banner img"
-                            className="w-full"
-                        />
-                    </figure>
-                </div>
-            </div>
-        </section>
-    )
-}
-
-export default Hero
+export default Hero;

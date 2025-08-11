@@ -3,11 +3,6 @@
  * @license Apache-2.0
  */
 
-/***********
- * IMPORTS *
- ***********/
-
-//TODO: mudar essa imagem feia do krl e colocar as tecnologias que eu mais uso
 import { ButtonOutline, PrimaryButton } from "./Button";
 
 const Hero = () => {

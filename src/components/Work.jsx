@@ -55,7 +55,6 @@ const Work = () => {
       id="work"
       className="section">
       <div className="container">
-
         <h2 className="headline-2 mb-8 reveal-up">
           Meus projetos (Todos placeholders, estou trabalhando no portfolio)
         </h2>

@@ -6,16 +6,15 @@
 /****************
  * NODE MODULES *
  ****************/
-import { ReactLenis } from 'lenis/react'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { useGSAP } from '@gsap/react';
-
+import { ReactLenis } from "lenis/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 /*************************
  * REGISTER GSAP PLIGINS *
  *************************/
-gsap.registerPlugin(useGSAP,ScrollTrigger)
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 /**************
  * COMPONENTS *
@@ -27,40 +26,44 @@ import Skill from "./components/Skill";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { AuroraBackground } from "./components/ui/aurora-background";
 
 const App = () => {
   useGSAP(() => {
-    const elements = gsap.utils.toArray('.reveal-up')
+    const elements = gsap.utils.toArray(".reveal-up");
 
-    elements.forEach(element => {
+    elements.forEach((element) => {
       gsap.to(element, {
         scrollTrigger: {
           trigger: element,
           scrub: true,
-          start: '-200 bottom',
-          end: 'bottom 80%',
+          start: "-200 bottom",
+          end: "bottom 80%",
         },
         opacity: 1,
         y: 0,
         duration: 1,
-        ease: 'power2.out'
-      })
-    })
+        ease: "power2.out",
+      });
+    });
   });
 
   return (
     <ReactLenis root>
       <Header />
       <main>
-        <Hero />
-        <About />
-        <Skill />
-        <Work />
-        <Contact />
+        <AuroraBackground allowFullScreen={true}>
+          <Hero />
+          <About />
+          <Skill />
+          <Work />
+          <Contact />
+        </AuroraBackground>
       </main>
+
       <Footer />
     </ReactLenis>
   );
-}
+};
 
 export default App;

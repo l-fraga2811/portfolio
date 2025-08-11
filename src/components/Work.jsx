@@ -7,16 +7,13 @@
  * IMPORTS *
  ***********/
 import Projectcard from './Projectcard'
-/********
- * TODO arrumar os projetos*
- ********/
 
 const works = [
   {
-    imgSrc: '/images/project-1.jpg',
-    title: 'Full stack music app',
-    tags: ['API', 'MVC', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/'
+    imgSrc: '/images/project-1.png',
+    title: 'LipMkt',
+    tags: ['API', 'NextJS', 'AI'],
+    projectLink: 'https://lip7.com.br/'
   },
   {
     imgSrc: '/images/project-2.jpg',
